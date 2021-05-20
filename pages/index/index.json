@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "dateTimePicker",
+  "usingComponents": {
+    "dateTimePicker":"/components/dateTimePicker/dateTimePicker"
+  }
+}

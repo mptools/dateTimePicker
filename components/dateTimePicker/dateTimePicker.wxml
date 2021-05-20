@@ -1,0 +1,7 @@
+<!--miniprogram/components/dateTimePicker/dateTimePicker.wxml-->
+<picker mode="multiSelector" bindchange="bindDateTimePickerChange" bindcolumnchange="bindDateTimePickerColumnChange" value="{{dateTimeIndex}}" range="{{dateTimeArray}}" bindlongpress="dateUpdate">
+    <view wx:if="{{config.type==0}}" space>{{dateTimeArray[0][dateTimeIndex[0]]}}-{{dateTimeArray[1][dateTimeIndex[1]]}}-{{dateTimeArray[2][dateTimeIndex[2]]}}</view>
+    <view wx:elif="{{config.type==1}}" space>{{dateTimeArray[0][dateTimeIndex[0]]}}-{{dateTimeArray[1][dateTimeIndex[1]]}}-{{dateTimeArray[2][dateTimeIndex[2]]}} {{dateTimeArray[3][dateTimeIndex[3]]}}时</view>
+    <view wx:elif="{{config.type==2}}" space>{{dateTimeArray[0][dateTimeIndex[0]]}}-{{dateTimeArray[1][dateTimeIndex[1]]}}-{{dateTimeArray[2][dateTimeIndex[2]]}} {{dateTimeArray[3][dateTimeIndex[3]]}}:{{dateTimeArray[4][dateTimeIndex[4]]}}</view>
+    <view wx:else space>{{dateTimeArray[0][dateTimeIndex[0]]}}-{{dateTimeArray[1][dateTimeIndex[1]]}}-{{dateTimeArray[2][dateTimeIndex[2]]}} {{dateTimeArray[3][dateTimeIndex[3]]}}:{{dateTimeArray[4][dateTimeIndex[4]]}}:{{dateTimeArray[5][dateTimeIndex[5]]}}</view>
+</picker>
